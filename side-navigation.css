@@ -1,0 +1,101 @@
+#side-nav-container{
+  z-index: 1;
+  position: fixed;
+  display: none;
+  background-color: rgba(247, 247, 247, 0.5);
+  width: 100%;
+  height: 100vh;
+}
+#side-nav{
+  display: block;
+  height: 100%;
+  width: 50%;
+  z-index: 3;
+  left: 0.5vw;
+  background-color: #fffcf9;
+  overflow-x: hidden;
+  position: fixed;
+  transition: 0.5s;
+  padding: 2vw 1vw 2vw 1vw;
+}
+.sideSearchBar form>input {
+  border: 0.8px solid lightgrey;
+  outline: none;
+  margin-bottom: 0;
+  width: 80%;
+  padding: 6px;
+  font-size: 0.7em;
+}
+.sideSearchBar form>input:focus {
+  border-bottom: 1px solid grey;
+}
+
+#side-nav-close {
+  position: absolute;
+  right: 4%;
+  top: 1%;
+  font-size: 2em;
+  cursor: pointer;
+}
+.menu-body{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.left{
+  width: 50%;
+  height: 100%;
+}
+.right{
+  width: 50%;
+  height: 100%;
+}
+.sideNavBar a {
+  text-decoration: none;
+  display: block;
+  margin: 18px 0 18px 0;
+  color: darkgrey;
+  transition: 0.3s;
+}
+.sideNavBar a:hover {
+  color: dimgrey;
+}
+.side-women-sub-categories.li{
+  display: block;
+}
+.side-men-sub-categories.li{
+  display: none;
+}
+hr{
+  width: 86%;
+}
+.left>span, .left>div {
+  color: dimgrey;
+}
+.side-main-category .current-view {
+  color: dimgrey;
+}
+
+
+/*.side-sub-category a {
+  text-decoration: none;
+  color: darkgrey;
+  transition: 0.3s;
+  display: block;
+}
+*/
+
+/*display almost fullscreen side navigation bar on smallest screen, mobil etc*/
+@media screen and (max-width: 470px) {
+  #side-nav{
+    width: 98%;
+  }
+  .sideSearchBar form>input {
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+  }
+  .sideSearchBar form>input:focus {
+    width: 86%;
+  }
+}

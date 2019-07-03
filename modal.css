@@ -1,0 +1,121 @@
+/*style the modal table*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(1,1,1,0.4);
+}
+.modalContent {
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #fffdfc;
+    margin: 10% auto;
+    padding: 30px 20px;
+    border: 1px solid lightgrey;
+    width: 320px;
+    position: relative;
+}
+.modalHeader {
+    background-color: inherit;
+    border-bottom: 0.8px solid lightgrey;
+}
+.close-btn {
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    font-size: 28px;
+    padding: 0 6px 0 6px;
+}
+.close-btn:hover,
+.close-btn:focus {
+    color: dimgrey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    color: dimgrey
+    text-align: left;
+    font-size: 0.8em;
+    background-color: inherit;
+}
+.modalBody {
+    margin: 20px 0;
+    background-color: #fffdfc;
+}
+
+/*full screen input area*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 6px;
+    margin: 2px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-style: none;
+    }
+input[type=text]:focus, input[type=password]:focus {
+    border-bottom: 0.8px solid grey;
+    outline: none;
+}
+label {
+    font-size: 0.8em;
+    background-color: #fffdfc;
+}
+button[type=submit] {
+    background-color: dimgray;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 1em;
+}
+button:hover {
+    opacity: 0.8;
+}
+a.forgot{
+    text-decoration: none;
+    font-size: 0.8em;
+    color: lightslategrey;
+}
+.modalFooter {
+    border-top: 0.8px solid lightgrey;
+    background-color: inherit;
+}
+.modalFooter a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    padding: 4px 0;
+    background-color: inherit;
+}
+@media screen and (max-width: 1024px) {
+    .modalContent {
+      margin: 40% auto;
+    }
+}
+@media screen and (max-width: 700px) {
+    .modalContent {
+        width: 100%;
+        margin: 40% 0;
+    }
+}
+
+ /*animation*/
+.animate {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}

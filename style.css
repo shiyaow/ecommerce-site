@@ -1,0 +1,256 @@
+﻿* {
+  background-color: #fffcf9;
+  box-sizing: border-box;
+  margin: 0;
+  font-family:'Libre Franklin', sans-serif;}
+body {
+  width: 98.5vw;
+  height: 300vh;
+  margin: auto;
+  overflow-x: hidden;
+}
+/*font-family:'Nanum Gothic', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Pontano Sans', sans-serif;
+}*/
+
+/*add background color to the top ad*/
+.topAd {
+  height: 6vh;
+  background-color: #c6c6c6;
+  color: white;
+  font-family: "nanum Gothic", sans-serif;
+  font-size: 0.7em;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+.topAd p {
+  background-color: inherit;
+  color: white;
+  font-size: 1.2em;
+  padding-bottom: 5;
+}
+#curtain{
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background-color: rgb(249, 250, 252);
+  opacity: 0;
+  transition: opacity 1s;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*add background color to the navigation bar*/
+.topNav {
+  width: 100%;
+  z-index: 2;
+  padding-left: 2%;
+  padding-right: 2%;
+  height: 8vh;
+  padding-top: 0.8%;
+  /*padding-bottom: 0.6%;*/
+  border-bottom: #c9c8c7 0.02em solid;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+  -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+  transition: height 1s;
+}
+
+ul {
+    list-style: none;
+}
+ul.categories {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+/*style the link inside the navigation bar*/
+.topNav a {
+  display: block;
+  color: dimgrey;
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 0;
+  margin: 0 8px 0 8px;
+  text-align: center;
+}
+.topNav a:hover {
+  background-color:　#f9f6f2;
+  color: black;
+  transition: 0.9s;
+}
+
+li.menuIcon {
+  display: none;
+}
+
+li.all-categories {
+  margin-left: auto;
+  margin-right: auto;
+}
+li.all-categories a{
+  padding-bottom: 4px;
+}
+li.all-categories a:hover{
+  border-bottom: 1px solid darkgrey;
+  transition: none;
+}
+.searchBar form>input {
+  border: 0.8px solid lightgrey;
+  outline: none;
+  margin-bottom: 8px;
+  width: 140px;
+  padding: 6px;
+  font-size: 0.5em;
+  transition: width 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+}
+.searchBar form>input:focus {
+  width: 180px;
+}
+.winter-edition-introduction{
+  padding: 6vw;
+  position: relative;
+  width: 100%;
+  color: #7f6c59;/*#826446;*/
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#myReact {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 780px) {
+  .topAd{
+    display: none;
+  }
+  .topNav{
+    padding-top: 2.6%;
+    padding-bottom: 2.6%;
+    align-items: center;
+  }
+  li {
+    display: none;
+  }
+  .side-women-sub-categories>li{
+    display: block;
+  }
+  ul.topNav{
+    justify-content: flex-start;
+    }
+  li.menuIcon{
+    display: block;
+    }
+  li.brandLogo{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+  /*li.responsiveSearch {
+    display: none;
+    font-size: 0.7em;
+    margin-right: 6px;
+    }*/
+  li.bagIcon {
+    display: block;
+    }
+}
+
+/*@media screen and (max-width: 780px) {
+  .topNav li.all_categories .responsive {
+    display: block;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+  .topNav li.loginBtn .responsive {
+        display: block;
+    }
+/*begin image display gallery*/
+.gallery-responsive {
+  background-color: lightgrey;
+}
+.gallery-responsive a {
+  font-family: 'Cabin', sans-serif;
+  font-size: 12px;
+}
+.gallery-responsive a:link {
+  color: dimgrey;
+}
+.gallery-responsive a:visited {
+  color: dimgrey;
+}
+.gallery-row {
+  display: flex;
+  flex-wrap : wrap;
+  padding: 5px 10%;
+  align-items: baseline;
+}
+.gallery-column {
+  flex: 25%;
+  max-width: 50%;
+  height: 500px;
+  padding: 5px 15px;
+  overflow-x: hidden;
+}
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: bottom;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.text-centered {
+  text-align: center;
+}
+.new-arrival {
+  padding: 10px;
+  border-top: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+}
+@media screen and (max-width: 1000px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .gallery-column {
+    flex: 100vw;
+    max-width: 100vw;
+  }
+  .gallery-row {
+    padding: 5px 0;
+  }
+}
+/**begin website footer*********/
+.footer {
+  background-color: lightgrey;
+  position: relative;
+  color: dimgrey;
+  width: 100vw;
+  height: 12vw;
+  padding: 10px 10%;
+}
+.footer a {
+  background-color: transparent;
+}

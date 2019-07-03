@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D|G online store, ecommerce homepage, women's wear, men wear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="topnav-dropdown.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="sign_in_form.css">
+    <link rel="stylesheet" href="side-navigation.css">
+    <link rel="stylesheet" href="slideshow-image.css">
+    <link rel="stylesheet" href="reactstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Libre+Franklin|Pontano+Sans|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+
+
+  <body>
+    <!--slide show advertisement-->
+    <div class="topAd">
+        <p>Free delivery over 1000kr, always free return</p>
+    </div>
+    <div id="curtain"></div>
+
+    <ul class="topNav" id="myTopNav" role="navigation">
+
+
+<!--create hambuger icon and show side navigation bar on click on smaller screens-->
+        <li class="menuIcon">
+          <a href="javascript: void(0)" id="menu-hambuger"><i class="fas fa-bars"></i>
+          </a>
+        </li>
+        <li class="brandLogo">
+          <a href="#"><i class="fab fa-grav"></i> D|G Online</a>
+        </li>
+        <li><a href="#">currency</a>
+        </li>
+        <li class="all-categories">
+            <ul class="categories">
+              <li class="category-women unfold-btn"><a href="#">women</a></li>
+              <li class="category-men unfold-btn"><a href="#">men</a></li>
+              <li class="category-home unfold-btn"><a href="#">home & gift</a></li>
+              <li class="category-sale unfold-btn"><a href="#">promotion</a></li>
+              <li class="unfold-btn"><a href="#">explore</a></li>
+          </ul>
+        </li>
+        <li class="searchBar">
+            <form><input type="text" placeholder="search.." name="search"></form></li>
+        <!--<li class=responsiveSearch><button type="submit"><i class="fas fa-search"></i></button></li>
+-->
+<!--onclick user icon popup sign in modal-->
+        <li id="modalBtn"class="loginBtn"><a href="#"><i class="fas fa-user-circle"></i></a>
+        </li>
+        <li class="bagIcon"><a href="#bag"><i class="fas fa-shopping-bag"></i></a>
+        </li>
+<!--drop down contents right below the top navigation-->
+        <div class="dropdown-content" id="drop-content-women">
+            <div class="row">
+              <div class="column">
+                <a href="#"> New in!</a>
+                <a href="#"> Tops</a>
+                <a href="#"> Coats</a>
+                <a href="#"> Jackets</a>
+                <a href="#"> dresses</a>
+                <a href="#"> Jumpsuits</a>
+              </div>
+              <div class="column">
+                <a href="#"> Trousers</a>
+                <a href="#"> Jeans</a>
+                <a href="#"> Lingerie</a>
+                <a href="#"> Swimwear</a>
+                <a href="#"> Beauty</a>
+                <a href="#"> Accessories</a>
+              </div>
+              <div class="column">
+                <a href="#"> Shoes</a>
+                <a href="#"> Vintage</a>
+                <a href="#"> Featured brands</a>
+                <a href="#"> Sales & Offer</a>
+              </div>
+              <div class="top-nav-pic-container">
+                <a href="#"><img src="images\600-women.jpg"></img></a>
+                <span>explore our new arrivals</span>
+              </div>
+              <div class="top-nav-slogen"> Free delivery over 1000 SEK</div>
+            </div>
+        </div>
+        <div class="dropdown-content" id="drop-content-men" style="display: none">
+            <div class="row">
+              <div class="column">
+                <a href="#"> New in!</a>
+                <a href="#"> Tops</a>
+                <a href="#"> Coats</a>
+                <a href="#"> Jackets</a>
+                <a href="#"> Knitwear</a>
+                <a href="#"> Wool</a>
+              </div>
+              <div class="column">
+                <a href="#"> Trousers</a>
+                <a href="#"> Jeans</a>
+                <a href="#"> Lingerie</a>
+                <a href="#"> Swimwear</a>
+                <a href="#"> Accessories</a>
+              </div>
+              <div class="column">
+                <a href="#"> Shoes</a>
+                <a href="#"> Vintage</a>
+                <a href="#"> Featured brands</a>
+                <a href="#"> Sales & Offer</a>
+              </div>
+              <div class="top-nav-pic-container">
+                <a href="#"><img src="images\600-women.jpg"></img></a>
+                <span>Wool for the winter blazes</span>
+              </div>
+              <div class="top-nav-slogen"> subscribe to our newsletters and get 10% off</div>
+            </div>
+            </div>
+        </div>
+    </ul>
+
+
+<!--Side navigation bar is created-->
+    <div id="side-nav-container">
+      <div class="sideNavBar" id="side-nav">
+        <div class="menu-header">
+          <div class="sideSearchBar">
+            <form><input type="text" placeholder="search" name="search">
+            </form>
+          </div>
+          <span id="side-nav-close">&times;</span>
+        </div>
+        <div class="menu-body">
+          <div class="left side-main-category">
+            <a class="current-view" href="#">women</a>
+            <a href="#">men</a>
+            <a href="#">accessories</a>
+            <a href="#">home</a>
+            <a href="#">promotion</a>
+            <a href="#">explore</a>
+            <br/>
+            <hr/>
+            <br/>
+            <span id="side-login"class="loginBtn">Sign in</span><br/><br/>
+            <div>Ship to: Sweden</div>
+            <br/><br/><br/><br/><br/><br/>
+            <div>Customer support</div>
+            <br/>
+            <div>Find our stores</div>
+          </div>
+          <div class="right side-sub-category">
+            <ul class="side-women-sub-categories">
+              <li><a href="#"> New in!</a></li>
+              <li><a href="#"> Tops</a></li>
+              <li><a href="#"> Knitwear</a></li>
+              <li><a href="#"> Coats & Jackets</a></li>
+              <li><a href="#"> Dresses</a></li>
+              <li><a href="#"> Trousers</a></li>
+              <li><a href="#"> Lingerie</a></li>
+              <li><a href="#"> Swimwear</a></li>
+              <li><a href="#"> Beauty</a></li>
+              <li><a href="#"> Accessories</a></li>
+              <li><a href="#"> Shoes</a></li>
+              <li><a href="#"> Vintage</a></li>
+              <li><a href="#"> Featured brands</a></li>
+              <li><a href="#"> Sales & Offer</a></li>
+            </ul>
+            <ul class="side-men-sub-categories">
+              <li><a href="#"> New in!</a></li>
+              <li><a href="#"> Tops</a></li>
+              <li><a href="#"> Knitwear</a></li>
+              <li><a href="#"> Coats & Jackets</a></li>
+              <li><a href="#"> Trousers</a></li>
+              <li><a href="#"> Lingerie</a></li>
+              <li><a href="#"> Swimwear</a></li>
+              <li><a href="#"> Accessories</a></li>
+              <li><a href="#"> Shoes</a></li>
+              <li><a href="#"> Vintage</a></li>
+              <li><a href="#"> Featured brands</a></li>
+              <li><a href="#"> Sales & Offer</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-footer">
+          <hr/>
+          <br/>
+          <div style="color: #656e87">Free delivery on order over 1000 SEK, always free return</div>
+          <br/>
+          <div style="color: #656e87">Subscribe to our newsletters and get 10% off your first order</div>
+          <br/>
+
+        </div>
+      </div>
+    </div>
+
+<!--login modal is created-->
+    <div id="login-modal" class="modal">
+      <div class="modalContent">
+          <span class="close-btn">&times;</span>
+          <div class="modalHeader">
+              <h2>Sign in</h2>
+              </br>
+              <p style="font-size: 0.7em">subscribe and get 10% off your first order</p>
+          </div>
+
+          <div class="modalBody">
+              <!--login form is created-->
+              <form action="" class="sign_in">
+                <div class="form_container">
+                  <label for="user_name">username</label>
+                  <input type="text" name="user_name" required>
+                  <br>
+                  <label for="password">password</label>
+                  <input type="password" name="password" required>
+                  <br>
+                  <a class="forgot" href="#">forgot your password?</a>
+                  </br>
+                  <button type="submit"> sign in</button>
+                  <!--<label>
+                  <input type="checkbox" checked="checked" name="rmb"> remember me
+                  </label><br>-->
+                  </div>
+              </form>
+          </div>
+          <div class="modalFooter">
+              <a href="#">create an account</a>
+          </div>
+      </div>
+    </div>
+
+<!--slide show full screen pics with links to shopping page-->
+    <div class="slideshow-container">
+    <!--full width picture with caption(clickable links) in the middle-->
+      <div class="slideshow-image fade">
+        <img src="images/ge1548.jpg" style="width: 100%; height: 100%; object-fit: cover">
+        <div class="text" style="color: #51504e">Winter 2018</br></br>
+          <a href="#" style="color: #51504e">New edition</a>
+        </div>
+      </div>
+      <div class="slideshow-image fade" style="color: dimgrey;">
+        <img src="images/ge2121.jpg" style="width: 100%; height: 100%; object-fit: cover">
+        <div class="text">Evening Velvet</br></br>
+          <a href="#">shop womens</a></br><a href="#">shop man's</a>
+        </div>
+      </div>
+      <div class="slideshow-image fade">
+        <img src="images/ge2288.jpg" style="width: 100%; height: 100%; object-fit: cover">
+        <div class="text">From day to night</br></br>
+          <a href="#">shop women's</a></br><a href="#">shop men's</a>
+        </div>
+      </div>
+      <div class="slideshow-image fade">
+        <img src="images/ge2278.jpg" style="width: 100%; height: 100%; object-fit: cover">
+        <div class="text">Teasure for your loved ones</div>
+      </div>
+    <!--next and previous button-->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <br>
+<!--the dots/circles-->
+    <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+
+<!--introducing the winter edition-->
+    <div class="winter-edition-introduction">
+      Foundational pieces for a modern wardrobe. </br>
+      Discover classic styles that will last beyond the season.
+    </div>
+<!--responsive image gallery--------->
+    <div class="gallery-responsive">
+
+      <div class="gallery-row">
+        <div class="gallery-column">
+          <img src="images/shirts-women.jpg" style="width: 400px; height: auto;"></br>
+          <p>shirts for all occsions</p></br>
+          <a href="#">shop women's</a></br>
+          <a href="#">shop men's</a>
+        </div>
+        <div class="gallery-column">
+          <img src="images/sweater-men.jpg" style="width: 300px; height: auto;">
+          <p>essential knitwear pieces</p></br>
+          <a href="#">shop women's</a></br>
+          <a href="#">shop men's</a>
+        </div>
+      </div>
+      <div class="text-centered new-arrival">
+        <p class="winter-edition-introduction">discover our new arrivals</p>
+        <a href="#">shop women's</a></br>
+        <a href="#">shop men's</a>
+      </div>
+      <div class="text-centered" style="font-family: 'Quicksand', sans-serif;">
+        <p class="winter-edition-introduction">the suits for today</p>
+      </div>
+      <div class="gallery-row">
+        <div class="gallery-column">
+          <img src="images/suits-women.jpg"></br>
+          <a href="#">Slim tailored trousers with zips</a>
+        </div>
+        <div class="gallery-column">
+          <img src="images/suits-women2.jpg"></br>
+          <a href="#">Single-breasted blazer with zips</a>
+        </div>
+        <div class="gallery-column">
+          <img src="images/suites-men.jpg"></br>
+          <a href="#">Slim-fit tailored trousers</a>
+        </div>
+        <div class="gallery-column">
+          <img src="images/suits-men2.jpg"></br>
+          <a href="#">Regular three-button blazer</a>
+        </div>
+    </div>
+<!--add some react component to a existing plain html------------------------>
+<div id="app"></div>
+<!--------------------------------------->
+
+<!--begin website footer----------------------------->
+<div class="footer">
+  <div class="links"></div>
+    <a href="#">Customer Services</a>
+    <a href="#">Return policy</a>
+
+  <div class="find-stores"></div>
+
+
+</div>
+<!--end website footer-------------------------------->
+
+  <script type="text/javascript" src="responsiveMenu.js"></script>
+  <script type="text/javascript" src="modal.js">
+ </script>
+  <script type="text/javascript" src="slideshow.js"> </script>
+  <script type="text/javascript" src="open-side-nav.js"></script>
+  <script type="text/javascript" src="unfold-top-nav.js"></script>
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <!--load react component-->
+  <script src="reactButton.js"></script>
+  </body>
+
+</html>
